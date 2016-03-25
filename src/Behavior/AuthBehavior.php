@@ -12,4 +12,8 @@ class AuthBehavior {
     {
         return $x + $y;
     }
+    public function output($x)
+    {
+        return $x + 7;
+    }
 }
