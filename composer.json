@@ -1,0 +1,14 @@
+{
+    "name": "Course/behavior",
+    "authors": [
+        {
+            "name": "刘国靖",
+            "email": "liuguojing@gaodun.com"
+        }
+      ],
+     "minimum-stability": "dev",
+     "autoload":{
+            "psr-4": {"Course\\": "src/"}
+      },
+      "require": {}
+}
