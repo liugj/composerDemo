@@ -1,27 +1,31 @@
-<?php 
+<?php
+
 namespace Tests\Behavior;
+
 use  Course\Behavior\AuthBehavior;
 
 class AuthBehaviorTest extends \PHPUnit_Framework_TestCase
 {
-    public $behavior = NULL;
-    function setUp() 
+    public $behavior = null;
+
+    public function setUp()
     {
-        $this->behavior =  new AuthBehavior();
+        $this->behavior = new AuthBehavior();
     }
 
-    function testAddNumbersSuc()
+    public function testAddNumbersSuc()
     {
-        $sum = $this->behavior->addNumbers(1,4);
+        $sum = $this->behavior->addNumbers(1, 4);
         $this->assertEquals(5, $sum);
     }
 
-    function testAddNumbersFail()
+    public function testAddNumbersFail()
     {
-        $sum = $this->behavior->addNumbers(1,4);
+        $sum = $this->behavior->addNumbers(1, 4);
         $this->assertEquals(6, $sum);
     }
-    function testOuputSuc()
+
+    public function testOuputSuc()
     {
         $sum = $this->behavior->output(5);
         $this->assertEquals(12, $sum);

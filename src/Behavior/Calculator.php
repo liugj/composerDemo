@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 /**
  * Created by JetBrains PhpStorm.
  * User: Kendoctor
@@ -6,9 +7,12 @@
  * Time: 上午9:39
  * To change this template use File | Settings | File Templates.
  */
+
 namespace Acme\models;
-class Calculator {
-    public function addNumbers($x,$y)
+
+class Calculator
+{
+    public function addNumbers($x, $y)
     {
         return $x + $y;
     }
